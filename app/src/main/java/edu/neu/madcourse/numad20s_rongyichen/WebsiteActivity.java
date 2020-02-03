@@ -1,16 +1,15 @@
 package edu.neu.madcourse.numad20s_rongyichen;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.webkit.WebView;
 
-import java.net.MalformedURLException;
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.net.URL;
 
-public class WebActivity extends AppCompatActivity {
+public class WebsiteActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

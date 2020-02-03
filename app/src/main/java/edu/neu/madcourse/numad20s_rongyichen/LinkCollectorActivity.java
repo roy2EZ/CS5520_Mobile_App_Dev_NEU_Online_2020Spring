@@ -16,8 +16,8 @@ import com.google.android.material.snackbar.Snackbar;
 import java.util.LinkedList;
 import java.util.List;
 
-public class LinkCollector extends AppCompatActivity {
-    private List<Item> mUrlList;
+public class LinkCollectorActivity extends AppCompatActivity {
+    private List<Website> mUrlList;
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
@@ -41,9 +41,9 @@ public class LinkCollector extends AppCompatActivity {
 
         this.mUrlList = new LinkedList<>();
 
-        mAdapter = new MyAdapter(mUrlList, new MyAdapter.OnItemClickListener() {
-            @Override public void onItemClick(Item item) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(item.getUrl()));
+        mAdapter = new Adapter(mUrlList, new Adapter.OnItemClickListener() {
+            @Override public void onItemClick(Website Website) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(Website.getUrl()));
                 startActivity(intent);
             }});
         mRecyclerView.setLayoutManager(mLayoutManager);
@@ -52,9 +52,9 @@ public class LinkCollector extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Item item = new Item(edittextName.getText().toString(), edittextUrl.getText().toString());
-                mUrlList.add(item);
-                Snackbar.make(v, "Item added to list", Snackbar.LENGTH_LONG) .setAction("Undo", undoOnClickListener).show();
+                Website Website = new Website(edittextName.getText().toString(), edittextUrl.getText().toString());
+                mUrlList.add(Website);
+                Snackbar.make(v, "Website added to list", Snackbar.LENGTH_LONG) .setAction("Undo", undoOnClickListener).show();
                 mAdapter.notifyDataSetChanged();
             }
 
@@ -65,7 +65,7 @@ public class LinkCollector extends AppCompatActivity {
         @Override public void onClick(View view) {
             mUrlList.remove(mUrlList.size() -1);
             mAdapter.notifyDataSetChanged();
-            Snackbar.make(view, "Item removed", Snackbar.LENGTH_LONG) .setAction("Action", null).show();
+            Snackbar.make(view, "Website removed", Snackbar.LENGTH_LONG) .setAction("Action", null).show();
         }
     };
 

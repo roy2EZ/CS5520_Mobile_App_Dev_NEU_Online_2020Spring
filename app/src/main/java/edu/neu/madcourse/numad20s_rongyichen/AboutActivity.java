@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class About extends AppCompatActivity {
+public class AboutActivity extends AppCompatActivity {
     private TextView myNameAndEmail;
     private Button buttonAbout;
     private boolean isTextDisplayed = false;

@@ -10,9 +10,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
+/**
+ * to display a scrolling list of saved websites
+ */
+public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
 
-    private List<Item> mItem;
+    private List<Website> myWebsites;
     private OnItemClickListener listener;
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
@@ -25,43 +28,43 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             textViewUrlLink = itemView.findViewById(R.id.urlLink);
         }
 
-        public void bind(final Item item, final OnItemClickListener listener) {
-            textViewUrlName.setText(item.getName());
-            textViewUrlLink.setText(item.getUrl());
+        public void bind(final Website Website, final OnItemClickListener listener) {
+            textViewUrlName.setText(Website.getName());
+            textViewUrlLink.setText(Website.getUrl());
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override public void onClick(View v) {
-                    listener.onItemClick(item);
+                    listener.onItemClick(Website);
                 }
             });
         }
     }
 
     public interface OnItemClickListener {
-        void onItemClick(Item item);
+        void onItemClick(Website Website);
     }
 
-    public MyAdapter(List<Item> itemList, OnItemClickListener listener) {
-        this.mItem = itemList;
+    public Adapter(List<Website> websiteList, OnItemClickListener listener) {
+        this.myWebsites = websiteList;
         this.listener = listener;
     }
 
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_item, parent, false);
-        MyViewHolder mvh = new MyViewHolder(v);
-        return mvh;
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_item, parent, false);
+        MyViewHolder myViewHolder = new MyViewHolder(view);
+        return myViewHolder;
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        Item currentItem = mItem.get(position);
-        holder.bind(currentItem, listener);
+        Website currentWebsite = myWebsites.get(position);
+        holder.bind(currentWebsite, listener);
 
     }
 
     @Override
     public int getItemCount() {
-        return this.mItem.size();
+        return this.myWebsites.size();
     }
 }

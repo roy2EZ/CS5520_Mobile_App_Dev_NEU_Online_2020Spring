@@ -7,6 +7,9 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ * To represent the main activity of this app
+ */
 public class MainActivity extends AppCompatActivity {
 
 
@@ -16,14 +19,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+
     public void enterAssignment1(View view) {
-        Intent i = new Intent(this, About.class);
-        startActivity(i);
+        Intent intent = new Intent(this, AboutActivity.class);
+        startActivity(intent);
     }
 
     public void enterAssignment2(View view) {
-        Intent i = new Intent(this, LinkCollector.class);
-        startActivity(i);
+        Intent intent = new Intent(this, LinkCollectorActivity.class);
+        startActivity(intent);
     }
     
 }

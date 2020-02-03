@@ -1,10 +1,13 @@
 package edu.neu.madcourse.numad20s_rongyichen;
 
-public class Item {
+/**
+ * to represent a user saved website element with its name and URL
+ */
+public class Website {
     private String name;
     private String url;
 
-    public Item(String name, String url) {
+    public Website(String name, String url) {
         this.name = name;
         this.url = url;
     }
