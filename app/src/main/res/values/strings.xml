@@ -2,4 +2,10 @@
     <string name="app_name">NUMAD20S-RongyiChen</string>
     <string name="aboutButton">ABOUT</string>
     <string name="myNameAndEmail">Rongyi Chen\nroychen.engineer@gmail.com</string>
+    <string name="link_collector">Link Collector</string>
+    <string name="action_settings">Settings</string>
+    <string name="no_value_string">No Value</string>
+    <string name="assignment_1">About</string>
+    <string name="please_enter_website_name">Please enter website name</string>
+    <string name="please_enter_url_e_g_https_www_facebook_com">Please enter URL e.g. https://www.facebook.com</string>
 </resources>
