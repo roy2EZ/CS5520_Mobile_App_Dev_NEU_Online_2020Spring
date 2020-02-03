@@ -7,6 +7,9 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ * For Assignment 1, this About activity had a button for display name and email of author
+ */
 public class AboutActivity extends AppCompatActivity {
     private TextView myNameAndEmail;
     private Button buttonAbout;
