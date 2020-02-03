@@ -48,6 +48,12 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
         this.listener = listener;
     }
 
+    /**
+     * Called when RecyclerView needs a new ViewHolder of the given type to represent an item.
+     * @param parent
+     * @param viewType
+     * @return a view holder
+     */
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -56,11 +62,15 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
         return myViewHolder;
     }
 
+    /**
+     * Called by RecyclerView to display the data at the specified position
+     * @param holder the view holder
+     * @param position the position
+     */
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         Website currentWebsite = myWebsites.get(position);
         holder.bind(currentWebsite, listener);
-
     }
 
     @Override
