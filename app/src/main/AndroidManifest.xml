@@ -13,6 +13,7 @@
         <activity android:name=".WebsiteActivity"></activity>
         <activity android:name=".LinkCollectorActivity" />
         <activity android:name=".AboutActivity" />
+        <activity android:name=".MathMagic" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

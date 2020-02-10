@@ -29,5 +29,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, LinkCollectorActivity.class);
         startActivity(intent);
     }
+
+    public void enterAssignment3(View view) {
+        Intent intent = new Intent(this, MathMagic.class);
+        startActivity(intent);
+    }
     
 }

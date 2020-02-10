@@ -8,4 +8,11 @@
     <string name="assignment_1">About</string>
     <string name="please_enter_website_name">Please enter website name</string>
     <string name="please_enter_url_e_g_https_www_facebook_com">Please enter URL e.g. https://www.facebook.com</string>
+    <string name="mathmagic">MathMagic</string>
+    <string name="stop_time">Stop Time</string>
+    <string name="number_count">Number counts:</string>
+    <string name="prime">Prime numbers:</string>
+    <string name="find_primes">Find Primes</string>
+    <string name="stop_primes">Stop Primes</string>
+    <string name="watch_time">Watch Time</string>
 </resources>
