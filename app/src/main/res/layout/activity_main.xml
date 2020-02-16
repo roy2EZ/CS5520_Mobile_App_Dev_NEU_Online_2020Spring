@@ -50,4 +50,18 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_to_a2"
         app:layout_constraintVertical_bias="0.159" />
 
+    <Button
+        android:id="@+id/btn_to_a4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="enterAssignment4"
+        android:text="Location"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_to_a3"
+        app:layout_constraintVertical_bias="0.256" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

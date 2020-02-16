@@ -17,6 +17,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
+ * Homework 2
  * To represent the Link Collector activity
  * which can save user input websites and go to a website on click
  */

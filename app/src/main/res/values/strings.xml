@@ -15,4 +15,9 @@
     <string name="find_primes">Find Primes</string>
     <string name="stop_primes">Stop Primes</string>
     <string name="watch_time">Watch Time</string>
+    <string name="latitude">Latitude:</string>
+    <string name="longitude">Longitude:</string>
+    <string name="location_information">LOCATION INFORMATION</string>
+    <string name="latitude_processing">Latitude: processing...</string>
+    <string name="longitude_processing">Longitude: processing...</string>
 </resources>

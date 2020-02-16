@@ -31,8 +31,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void enterAssignment3(View view) {
-        Intent intent = new Intent(this, MathMagic.class);
+        Intent intent = new Intent(this, MathMagicActivity.class);
         startActivity(intent);
     }
-    
+
+    public void enterAssignment4(View view) {
+        Intent intent = new Intent(this, LocationActivity.class);
+        startActivity(intent);
+    }
 }
