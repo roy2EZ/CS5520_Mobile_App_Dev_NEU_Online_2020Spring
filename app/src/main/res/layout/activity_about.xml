@@ -31,22 +31,21 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.701" />
+        app:layout_constraintVertical_bias="0.594" />
 
     <TextView
         android:id="@+id/myNameAndEmail"
-        android:layout_width="270dp"
-        android:layout_height="0dp"
+        android:layout_width="277dp"
+        android:layout_height="194dp"
         android:layout_marginBottom="113dp"
         android:gravity="center"
         android:singleLine="false"
         android:text="@string/myNameAndEmail"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonAbout"
-        app:layout_constraintVertical_bias="0.943" />
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
