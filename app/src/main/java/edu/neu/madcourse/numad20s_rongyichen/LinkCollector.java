@@ -76,7 +76,7 @@ public class LinkCollector extends AppCompatActivity {
             public void onClick(View v) {
                 Item item = new Item(edittextName.getText().toString(), edittextUrl.getText().toString());
                 mUrlList.add(item);
-                Snackbar.make(v, "Item added to list", Snackbar.LENGTH_LONG) .setAction("Undo", undoOnClickListener).show();
+                Snackbar.make(v, "Added to list", Snackbar.LENGTH_LONG) .setAction("Undo", undoOnClickListener).show();
                 mAdapter.notifyDataSetChanged();
             }
 
@@ -87,7 +87,7 @@ public class LinkCollector extends AppCompatActivity {
         @Override public void onClick(View view) {
             mUrlList.remove(mUrlList.size() -1);
             mAdapter.notifyDataSetChanged();
-            Snackbar.make(view, "Item removed", Snackbar.LENGTH_LONG) .setAction("Action", null).show();
+            Snackbar.make(view, "Removed", Snackbar.LENGTH_LONG) .setAction("Action", null).show();
         }
     };
 

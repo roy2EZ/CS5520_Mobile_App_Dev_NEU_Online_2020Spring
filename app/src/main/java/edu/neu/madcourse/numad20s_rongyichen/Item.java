@@ -1,6 +1,10 @@
 package edu.neu.madcourse.numad20s_rongyichen;
 import java.net.URL;
 
+/**
+ * HW5: Link Collector 2
+ * Item for website name and url
+ */
 public class Item {
     private String name;
     private String url;

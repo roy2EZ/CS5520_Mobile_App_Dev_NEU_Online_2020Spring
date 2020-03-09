@@ -10,13 +10,13 @@ import androidx.lifecycle.LiveData;
 import java.util.List;
 
 public class MainViewModel extends AndroidViewModel {
-    private WebsitesRepository repository;
+    private WebRepo repository;
     private LiveData<List<Websites>> allWebs;
 
 
     public MainViewModel(@NonNull Application application) {
         super(application);
-        repository = new WebsitesRepository(application);
+        repository = new WebRepo(application);
         allWebs = repository.getAllWebs();
 
     }

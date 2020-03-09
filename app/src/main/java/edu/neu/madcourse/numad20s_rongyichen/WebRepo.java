@@ -8,12 +8,12 @@ import androidx.lifecycle.MutableLiveData;
 
 import java.util.List;
 
-public class WebsitesRepository {
+public class WebRepo {
     private MutableLiveData<List<Websites>> searchResults = new MutableLiveData<>();
     private LiveData<List<Websites>> allWebs;
     private WebsitesDao websitesDao;
 
-    public WebsitesRepository(Application application) {
+    public WebRepo(Application application) {
         WebRoomDatabase db;
         db = WebRoomDatabase.getDatabase(application);
         websitesDao = db.websiteDao();

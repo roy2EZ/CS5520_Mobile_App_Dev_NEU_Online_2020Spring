@@ -14,6 +14,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.net.URL;
 import java.util.List;
 
+/**
+ * For HW5 Link Collector 2
+ * This is the website adapter for "link collector 2" activity
+ */
 public class WebsiteListAdapter extends RecyclerView.Adapter<WebsiteListAdapter.ViewHolder> {
     private static final String TAG = "WebsiteListAdapter";
     private int webItemLayout;
@@ -26,7 +30,10 @@ public class WebsiteListAdapter extends RecyclerView.Adapter<WebsiteListAdapter.
         this.mOnWebClickListener = onWebClickListener;
     }
 
-    // private OnItemClickListener listener;
+    /**
+     * This is for a private OnItemClickListener listener;
+     * @param mWebItem
+     */
 
     public void setmWebItem(List<Websites> mWebItem) {
         this.mWebItem = mWebItem;
@@ -69,15 +76,14 @@ public class WebsiteListAdapter extends RecyclerView.Adapter<WebsiteListAdapter.
             monWebClickListener.onItemClick(getAdapterPosition());
         }
     }
-
+    @Override
+    public int getItemCount() {
+        return this.mWebItem == null ? 0: mWebItem.size();
+    }
     public int psoIDtoItemId (int pos) {
         Log.d(TAG, "pos id: " + pos + " getID: "+ mWebItem.get(pos).getId());
         return mWebItem.get(pos).getId();
     }
 
 
-    @Override
-    public int getItemCount() {
-        return this.mWebItem == null ? 0: mWebItem.size();
-    }
 }

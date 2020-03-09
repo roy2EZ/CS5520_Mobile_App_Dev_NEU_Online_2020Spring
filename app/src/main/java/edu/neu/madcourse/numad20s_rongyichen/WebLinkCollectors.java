@@ -23,6 +23,10 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * For HW5 Link Collector 2
+ * This is the main "link collector 2" activity
+ */
 public class WebLinkCollectors extends AppCompatActivity implements WebsiteListAdapter.OnWebClickListener {
     private static final String TAG = "WebLinkCollector";
     private List<Websites> mWebList;

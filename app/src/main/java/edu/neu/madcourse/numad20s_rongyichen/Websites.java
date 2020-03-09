@@ -1,14 +1,15 @@
 package edu.neu.madcourse.numad20s_rongyichen;
 
-/**
- * to represent a user saved website element with its name and URL
- */
+
 
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+/**
+ * This is for website which user input
+ */
 @Entity(tableName = "websites")
 public class Websites {
     @PrimaryKey(autoGenerate = true)
