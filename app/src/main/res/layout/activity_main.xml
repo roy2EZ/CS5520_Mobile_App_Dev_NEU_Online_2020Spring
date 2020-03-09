@@ -30,10 +30,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintHorizontal_bias="0.548"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_to_a1"
-        app:layout_constraintVertical_bias="0.124" />
+        app:layout_constraintVertical_bias="0.028" />
 
     <Button
         android:id="@+id/btn_to_a3"
@@ -45,10 +45,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_to_a2"
-        app:layout_constraintVertical_bias="0.159" />
+        app:layout_constraintVertical_bias="0.038" />
 
     <Button
         android:id="@+id/btn_to_a4"
@@ -60,8 +59,28 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_to_a3"
-        app:layout_constraintVertical_bias="0.256" />
+        app:layout_constraintVertical_bias="0.053" />
+
+
+    <Button
+        android:id="@+id/button_goto_linkcollector2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:layout_marginTop="92dp"
+        android:onClick="enterAssignment5"
+        android:text="@string/link_collectoer_2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_to_a4"
+        app:layout_constraintVertical_bias="0.153" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void enterAssignment2(View view) {
-        Intent intent = new Intent(this, LinkCollectorActivity.class);
+        Intent intent = new Intent(this, LinkCollector.class);
         startActivity(intent);
     }
 
@@ -39,4 +39,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, LocationActivity.class);
         startActivity(intent);
     }
+
+    public void enterAssignment5(View view) {
+        Intent intent = new Intent(this, WebLinkCollectors.class);
+        startActivity(intent);
+    }
+
+
 }
